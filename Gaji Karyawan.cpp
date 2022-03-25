@@ -30,3 +30,21 @@ int main(){
 	else{
 		cout<<"Anda mendapatkan gaji normal\n";
 	}
+	cout<<"Apakah team 2 dapat mengerjakan kurang dalam 5 bulan? (1/0) \n";
+	cin>>b;
+	
+	if(b==1){
+		bonus2=0.06*28000000;
+		d=28000000;
+		cout<<"Anda mendapatkan gaji bonus senilai "<<bonus2<<endl;
+		cout<<"Total Gaji Anda = " << bonus2+d<<endl;
+		cout<<"==================================================\n";
+		
+	}
+	
+	else{
+		cout<<"Anda mendapatkan gaji normal\n";
+	}
+	cout<<"||====================================||"
+	return 0;
+}
