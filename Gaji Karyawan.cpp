@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	int a,b;
-	long int bonus1,bonus2,c,d;
+	long int bonus1,bonus2,c,d,total1, total2, normal1, normal2;
 	cout<<"Program menghiotung gaji\n";
 	cout<<"Gaji team 1 = 22 juta\n";
 	cout<<"Gaji team 2 = 28 juta\n";
@@ -17,34 +17,33 @@ int main(){
 	if (a == 1){
 		bonus1=0.06*22000000;
 		c=22000000;
+		total1=bonus1+c;
+		
 		cout<<"Anda mendapatkan gaji bonus senilai "<<bonus1<<endl;
-		cout<<"Total Gaji Anda = " << bonus1+c<<endl;
+		cout<<"Total Gaji Anda = " << total1<<endl;
 		cout<<"==================================================\n";
-	if (a == 1){
-		bonus1=0.06*22000000;
-		c=22000000;
-		cout<<"Anda mendapatkan gaji bonus senilai "<<bonus1<<endl;
-		cout<<"Total Gaji Anda = " << bonus1+c<<endl;
-		cout<<"==================================================\n";	
+		
 	}
 	else{
-		cout<<"Anda mendapatkan gaji normal\n";
+		cout<<"Team 1 mendapatkan gaji normal sebanyak \n";
+		cout<<"================================================\n";
 	}
-	cout<<"Apakah team 2 dapat mengerjakan kurang dalam 5 bulan? (1/0) \n";
+	
+	cout<<"Apakah team 2 dapat mengerjakan kurang dalam 5 bulan? (1/0) : ";
 	cin>>b;
 	
 	if(b==1){
 		bonus2=0.06*28000000;
 		d=28000000;
+		total2=bonus2+d;
 		cout<<"Anda mendapatkan gaji bonus senilai "<<bonus2<<endl;
-		cout<<"Total Gaji Anda = " << bonus2+d<<endl;
-		cout<<"==================================================\n";
+		cout<<"Total Gaji Anda = " << total2<<endl;
 		
 	}
 	
 	else{
-		cout<<"Anda mendapatkan gaji normal\n";
+		cout<<"Team 2 mendapatkan gaji normal\n";
 	}
-	cout<<"||====================================||"
+	cout<<"||====================================||\n";
 	return 0;
 }
