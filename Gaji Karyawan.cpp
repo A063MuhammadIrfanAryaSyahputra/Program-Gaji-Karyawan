@@ -20,3 +20,13 @@ int main(){
 		cout<<"Anda mendapatkan gaji bonus senilai "<<bonus1<<endl;
 		cout<<"Total Gaji Anda = " << bonus1+c<<endl;
 		cout<<"==================================================\n";
+	if (a == 1){
+		bonus1=0.06*22000000;
+		c=22000000;
+		cout<<"Anda mendapatkan gaji bonus senilai "<<bonus1<<endl;
+		cout<<"Total Gaji Anda = " << bonus1+c<<endl;
+		cout<<"==================================================\n";	
+	}
+	else{
+		cout<<"Anda mendapatkan gaji normal\n";
+	}
