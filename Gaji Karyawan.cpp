@@ -25,7 +25,7 @@ int main(){
 		
 	}
 	else{
-		cout<<"Team 1 mendapatkan gaji normal sebanyak \n";
+		cout<<"Team 1 mendapatkan gaji normal sebanyak 22 Juta "<<endl;
 		cout<<"================================================\n";
 	}
 	
@@ -42,7 +42,7 @@ int main(){
 	}
 	
 	else{
-		cout<<"Team 2 mendapatkan gaji normal\n";
+		cout<<"Team 2 mendapatkan gaji normal sebanyak 28 Juta\n";
 	}
 	cout<<"||====================================||\n";
 	return 0;
