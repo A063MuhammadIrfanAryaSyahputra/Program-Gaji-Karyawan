@@ -16,7 +16,7 @@ void process::input(int a,string tim){
 	cout<<"Masukan Jumlah Bulan Terselesaikannya Tugas : ";
 	cin>>prs.bul;
 	
-	if(prs.bul!=5){
+	if(prs.bul<5){
 		prs.tot=a*prs.bul;
 		prs.tbh=prs.tot*0.06;
 		
