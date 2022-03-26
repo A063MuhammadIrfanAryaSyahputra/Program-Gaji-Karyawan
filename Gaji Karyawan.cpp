@@ -1,51 +1,67 @@
-#include <iostream>
-#include <string>
+#include<iostream>
 using namespace std;
 
+class proses{
+	public :
+		int bulan;
+		float total;
+		float tambahan;
+		
+		void input(int a,string tim);
+		void output(string tim);
+		
+}pro;
+
+void proses::input(int a,string tim){
+	
+	cout<<endl;
+	cout<<"Masukan Jumlah Bulan Terselesaikannya Tugas : ";
+	cin>>pro.bulan;
+	
+	if(pro.bulan<=5){
+		pro.total=a*pro.bulan;
+		pro.tambahan=pro.total*0.06;
+		
+	}
+	else{
+		pro.total=a*pro.bulan;
+		
+	}
+	pro.output(tim);
+	
+}
+
+void proses::output(string tim){
+	system("cls");
+	cout<<"========================================"		<<endl;
+	cout<<"           SLIP GAJI ANDA               "		<<endl;
+	cout<<"========================================"		<<endl;
+	cout<<"									"				<<endl;
+	cout<<"	Developer : " <<tim								<<endl;
+	cout<<"	Jumlah    : " <<pro.bulan<<" Bulan"				<<endl;
+	cout<<" 	Tambahan  : " <<pro.tambahan<<" Juta"			<<endl;
+	cout<<"	Gaji 	  : " <<pro.total+pro.tambahan<<" Juta" <<endl;
+	cout<<"========================================"		<<endl;
+		
+}
+
 int main(){
-	int a,b,bulan;
-	long int bonus1,bonus2,c,d,total1, total2, normal1, normal2;
-	cout<<"||==============================================================================================||\n";
-	cout<<"||========================================Program menghitung====================================||\n";
-	cout<<"||Gaji team 1 = 22 juta                                                                         ||\n";
-	cout<<"||Gaji team 2 = 28 juta                                                                         ||\n";
-	cout<<"||Bagi team yang dapat menyelesaikan dalam waktu kurang dari 5 bulan maka gaji ditambah 6%      ||\n";
-	cout<<"||==============================================================================================||\n";
+	int pilih;
+	cout<<"========================================"		<<endl;
+	cout<<"        PROGRAM GAJI DEVELOPER          "		<<endl;
+	cout<<"========================================"		<<endl;
+	cout<<" 									   "		<<endl;
+	cout<<" TIM 1 22 JUTA  						   "		<<endl;
+	cout<<" TIM 2 28 JUTA						   "		<<endl;
+	cout<<" 									   "		<<endl;
+	cout<<"========================================"		<<endl;
 	
-	cout<<"||Dalam berapa bulan team 1 dapat menyelesaikan tugasnya ? ";
-	cin>>a;
-	cout<<"||==============================================================================================||\n";
-	
-	if (a != 5){
-		bonus1=0.06*22000000*a;
-		c=22000000;
-		total1=bonus1+c;
-		
-		cout<<"||Anda mendapatkan gaji bonus senilai "<<bonus1<<endl;
-		cout<<"||Total Gaji Anda = " << total1<<endl;
-		cout<<"||==============================================================================================||\n";
-		
+	cout<<"Masukan Pilihan Anda : ";
+	cin>>pilih;
+	if(pilih==1){
+		pro.input(22,"TIM1");
 	}
-	else{
-		cout<<"||Team 1 mendapatkan gaji normal sebanyak 22 Juta "<<endl;
-		cout<<"||=========================================================================================||\n";
+	else(pilih==2);{
+		pro.input(28,"TIM2");
 	}
-	
-	cout<<"||Dalam berapa bulan team 2 dapat menyelesaikan tugasnya ?  ";
-	cin>>b;
-	
-	if(b!=5){
-		bonus2=0.06*28000000*b;
-		d=28000000;
-		total2=bonus2+d;
-		cout<<"||Anda mendapatkan gaji bonus senilai "<<bonus2<<endl;
-		cout<<"||Total Gaji Anda = " << total2<<endl;
-		
-	}
-	
-	else{
-		cout<<"||Team 2 mendapatkan gaji normal sebanyak 28 Juta\n";
-	}
-	cout<<"||==============================================================================================||\n";
-	return 0;
 }
